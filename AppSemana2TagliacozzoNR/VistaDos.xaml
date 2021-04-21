@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppSemana2TagliacozzoNR.VistaDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" Text="USUARIO" />
+            <Label x:Name="lblPass" Text="CLAVE" />
+            <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+                <Label Text="Semana 2 Controles de interfaz" HorizontalTextAlignment="Center" TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            </Frame>
+            
+            <Entry x:Name="txtDato1" Placeholder="Ingrese un dato Numérico" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtDato2" Placeholder="Ingrese otro dato Numérico" Keyboard="Numeric"></Entry>
+
+            <Entry x:Name="txtResultado" Placeholder="Resultado" IsEnabled="False"></Entry>
+
+            <Button x:Name="btnSumar" Text="Sumar" Clicked="btnSumar_Clicked"></Button>
+            <Button x:Name="btnRestar" Text="Restar" Clicked="btnRestar_Clicked"></Button>
+            <Label x:Name="lblResultado" Text=".."></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

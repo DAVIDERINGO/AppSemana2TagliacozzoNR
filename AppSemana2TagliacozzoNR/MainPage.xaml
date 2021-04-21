@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppSemana2TagliacozzoNR.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+        <Label Text="Semana 2 Controles de interfaz" HorizontalTextAlignment="Center" TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        </Frame>
+
+        <Label Text="Ingrese un dato">
+        </Label>
+        
+        <Entry x:Name="txtDato1">
+        </Entry>
+        
+        <Label Text="Ingrese otro dato">
+        </Label>
+        
+        <Entry x:Name="txtDato2">
+        </Entry>
+
+        <Label Text="Resultado">
+        </Label>
+
+        <Entry x:Name="txtResultado" IsEnabled="False">
+        </Entry>
+
+        <Button x:Name="btnSumar"
+            Text="Sumar"
+            Clicked="btnSumar_Clicked">
+        </Button>
+
+
+        <Button x:Name="btnRestar"
+            Text="Resta"
+           Clicked="btnRestar_Clicked">
+        </Button>
+    </StackLayout>
+
+</ContentPage>
